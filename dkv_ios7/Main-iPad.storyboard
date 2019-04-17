@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="hIZ-BG-emX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="S0o-Qk-6tE">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="hIZ-BG-emX" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="asT-GQ-NHu">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rRk-nN-lFl" kind="relationship" relationship="viewControllers" id="uCd-BO-o3L"/>
+                        <segue destination="3vW-Pa-Vl7" kind="relationship" relationship="viewControllers" id="QGn-UK-C9D"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWa-hf-WcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="614"/>
+        </scene>
+        <!--Treman View Controller - Treman-->
+        <scene sceneID="fCr-hH-5Pe">
+            <objects>
+                <viewController id="3vW-Pa-Vl7" customClass="TremanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WNw-q4-3E6"/>
+                        <viewControllerLayoutGuide type="bottom" id="vD7-r0-hGL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMB-YL-9JZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cerise0.png" translatesAutoresizingMaskIntoConstraints="NO" id="s9p-on-EV0">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kasta!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1005" translatesAutoresizingMaskIntoConstraints="NO" id="7TW-dh-3OK">
+                                <rect key="frame" x="7" y="20" width="1005" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="120"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicedkv.png" translatesAutoresizingMaskIntoConstraints="NO" id="ku3-yT-JUj">
+                                <rect key="frame" x="62" y="265" width="470" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="470" id="1O9-lw-NBV"/>
+                                    <constraint firstAttribute="height" constant="470" id="WBE-8S-3ah"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1.png" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-QX-bAe">
+                                <rect key="frame" x="496" y="265" width="470" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="470" id="flx-JN-yJS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antal utdelade klunkar: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="349" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-kA-PV3">
+                                <rect key="frame" x="338" y="670" width="349" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="349" id="ThW-XX-Ozu"/>
+                                    <constraint firstAttribute="height" constant="31" id="Wyt-Ew-X1o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="width" secondItem="ku3-yT-JUj" secondAttribute="width" id="7vZ-ed-32V"/>
+                            <constraint firstItem="Nfb-kA-PV3" firstAttribute="centerX" secondItem="s9p-on-EV0" secondAttribute="centerX" id="Daq-WX-2uk"/>
+                            <constraint firstItem="vD7-r0-hGL" firstAttribute="top" secondItem="Nfb-kA-PV3" secondAttribute="bottom" constant="18" id="GQG-1M-1ZK"/>
+                            <constraint firstAttribute="trailing" secondItem="cIx-QX-bAe" secondAttribute="trailing" constant="58" id="QQj-CJ-yOb"/>
+                            <constraint firstItem="ku3-yT-JUj" firstAttribute="leading" secondItem="CMB-YL-9JZ" secondAttribute="leading" constant="62" id="SJj-UI-Cw3"/>
+                            <constraint firstItem="s9p-on-EV0" firstAttribute="trailing" secondItem="cIx-QX-bAe" secondAttribute="trailing" constant="58" id="SsN-vw-KJV"/>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="centerY" secondItem="ku3-yT-JUj" secondAttribute="centerY" id="SzR-Ie-cu6"/>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="bottom" secondItem="ku3-yT-JUj" secondAttribute="bottom" id="Uco-Cr-eGe"/>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="top" secondItem="ku3-yT-JUj" secondAttribute="top" id="azp-2d-AsM"/>
+                            <constraint firstAttribute="bottom" secondItem="s9p-on-EV0" secondAttribute="bottom" id="bLK-3M-AZZ"/>
+                            <constraint firstItem="vD7-r0-hGL" firstAttribute="top" secondItem="ku3-yT-JUj" secondAttribute="bottom" constant="-16" id="cZ9-Yk-biR"/>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="bottom" secondItem="ku3-yT-JUj" secondAttribute="bottom" id="g7W-Zz-m91"/>
+                            <constraint firstItem="s9p-on-EV0" firstAttribute="top" secondItem="CMB-YL-9JZ" secondAttribute="top" id="ikp-ac-vL1"/>
+                            <constraint firstItem="s9p-on-EV0" firstAttribute="leading" secondItem="ku3-yT-JUj" secondAttribute="leading" constant="-62" id="k1Z-RW-epW"/>
+                            <constraint firstItem="cIx-QX-bAe" firstAttribute="height" secondItem="ku3-yT-JUj" secondAttribute="height" id="trr-O6-goS"/>
+                            <constraint firstItem="s9p-on-EV0" firstAttribute="leading" secondItem="ku3-yT-JUj" secondAttribute="trailing" constant="-532" id="wXV-du-YUj"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Treman" image="treman-tab" id="A0V-Lm-OCn"/>
+                    <connections>
+                        <outlet property="diceImage1" destination="ku3-yT-JUj" id="JrM-nW-WfZ"/>
+                        <outlet property="diceImage2" destination="cIx-QX-bAe" id="w0Z-dq-wWq"/>
+                        <outlet property="eventLabel" destination="7TW-dh-3OK" id="v6X-sa-RoF"/>
+                        <outlet property="klunkarLabel" destination="Nfb-kA-PV3" id="kAw-Vo-fso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikN-Em-EPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="1172"/>
+        </scene>
+        <!--Klocka View Controller - Klockan-->
+        <scene sceneID="FIH-Vf-F9M">
+            <objects>
+                <viewController id="rRk-nN-lFl" customClass="KlockaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIK-mc-Bqk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djx-rY-Dap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ml4-7v-nD2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue0.png" translatesAutoresizingMaskIntoConstraints="NO" id="DnU-Ex-5mE">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-4u-I0H">
+                                <rect key="frame" x="52" y="126" width="921" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="3SB-Kx-mRJ"/>
+                                    <constraint firstAttribute="width" constant="921" id="ZtE-78-84t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="280"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZM-YG-TWd">
+                                <rect key="frame" x="476" y="677" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onResetPressed:" destination="rRk-nN-lFl" eventType="touchUpInside" id="Lx6-UG-s2P"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.0800000000000001" minValue="1" maxValue="1.99" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-ns-Xoz">
+                                <rect key="frame" x="453" y="644" width="118" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="TIV-fc-cVf"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.7725490196" green="0.2156862745" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider:" destination="rRk-nN-lFl" eventType="valueChanged" id="fPT-Jo-Fcv"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DnU-Ex-5mE" secondAttribute="trailing" id="4cj-at-vvD"/>
+                            <constraint firstItem="DnU-Ex-5mE" firstAttribute="top" secondItem="Ml4-7v-nD2" secondAttribute="top" id="NX5-W4-jWf"/>
+                            <constraint firstItem="DnU-Ex-5mE" firstAttribute="centerX" secondItem="ka0-4u-I0H" secondAttribute="centerX" id="PGR-fa-iDx"/>
+                            <constraint firstItem="ka0-4u-I0H" firstAttribute="top" secondItem="BIK-mc-Bqk" secondAttribute="bottom" constant="106" id="UHV-Io-XzT"/>
+                            <constraint firstItem="pCB-ns-Xoz" firstAttribute="leading" secondItem="Ml4-7v-nD2" secondAttribute="leading" constant="455" id="b5i-8Z-ixZ"/>
+                            <constraint firstItem="DnU-Ex-5mE" firstAttribute="leading" secondItem="Ml4-7v-nD2" secondAttribute="leading" id="lQu-HE-tiC"/>
+                            <constraint firstItem="Djx-rY-Dap" firstAttribute="top" secondItem="pCB-ns-Xoz" secondAttribute="bottom" constant="42" id="pRQ-1X-9j8"/>
+                            <constraint firstAttribute="bottom" secondItem="DnU-Ex-5mE" secondAttribute="bottom" id="x6a-9a-9mv"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Klockan" image="klockan" id="MN7-7n-G7w"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="slider" destination="pCB-ns-Xoz" id="Ql2-5G-VVK"/>
+                        <outlet property="stopwatchLabel" destination="ka0-4u-I0H" id="GRM-W8-4l0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0I-Ux-9AT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue0.png" width="640" height="1136"/>
+        <image name="cerise0.png" width="640" height="1136"/>
+        <image name="dice1.png" width="450" height="450"/>
+        <image name="dicedkv.png" width="450" height="450"/>
+        <image name="klockan" width="32" height="32"/>
+        <image name="treman-tab" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
